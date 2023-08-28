@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background: rgb(37, 37, 37) ;
+    color: #ffffff;
+    position: relative;
+}
+.container{
+    width: 40%;
+    position:fixed;
+    border: 2px solid white;
+    min-width: 500px;
+    top: 50%;
+    left: 50%;
+    margin-left: -290px;
+    margin-top: -250px;
+    padding: 40px 30px;
+    box-shadow: 3px 3px 20px rgb(141, 141, 141) ,
+        inset 1px 1px 10px rgb(83, 83, 83);
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+#newtask{
+    background-color: #34495E;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(90, 89, 89);
+}
+h1{
+    text-align: center;
+    padding-bottom:20px;
+}
+#newtask input{
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    border-radius: 8px;
+    padding: 10px;
+    width: 70%;
+    border: 1px solid black ;
+}
+#newtask input:focus{
+    outline: none;
+    border-color: red ;
+}
+#add{
+    font-size: 17px;
+    width: 20%;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 8px;
+    color: red; border: none ;
+}
+#add:hover{
+    background-color:red;
+    color: #ffffff ;
+}
+.lists{
+     overflow-y :auto ;
+     overflow-x :hidden ;
+     max-height :300px ;
+     font-size: 18px;
+}
+.task{
+    background-color :#34495E ;
+     min-height :50px ;
+     padding :5px ;
+     margin-top :10px ;
+     display :flex ;
+     justify-content :space-between ;
+     align-items :center ;
+     border-radius: 10px;
+}
+.task span{
+     font-weight :500 ;
+     font-size :17px ;
+}
+.deleteButton{
+     background-color :rgb(255,28,28) ;
+     color :#ffffff ; 
+     padding :10px ;
+     font-size :18px ;
+     height :calc(100% -10px) ; 
+     width :100px ; 
+     border-radius :10px ; 
+     border :none ; 
+     outline :none ;
+}
+.deleteButton:hover{
+     background-color :#ffffff ;
+     color :rgb(255,28,28) ;
+}
+.checkButton {
+   background-color:#ffffff;
+   color:green;
+   font-size:18px;
+   padding:10px;
+   height:calc(100% -10px);
+   width:100px;
+   border-radius:10px;
+   border:none;
+   outline:none;
+}
+.checkButton.checked {
+   background-color:green;
+   color:#ffffff;
+   content:"Done";
+}
+.checkButton:hover {
+   background-color:green;
+   color:#ffffff;
+}
+.checkButton.checked:hover {
+   background-color:#ffffff;
+   color:green;
+   content:"Done";
+}
